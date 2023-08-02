@@ -42,7 +42,5 @@ function checkPageBounds(direction, imgWidth, pos, pageWidth) {
   pageWidth = window.innerWidth;
         if (direction == 0 && pos + imgWidth > pageWidth) direction = 1;
         if (direction == 1 && pos < 0)direction = 0;
-
+return direction;
 }
-//Please do not change
-module.exports = checkPageBounds;
